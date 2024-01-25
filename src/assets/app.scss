@@ -1,0 +1,52 @@
+@import './base/font.scss';
+@import './base/animate.scss';
+
+:root {
+  --gray-200-color: #eef2f6;
+  --blue-primary-color: #5766ff;
+}
+
+body {
+  font-size: 14px;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.textover-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.box-shadow-common {
+  box-shadow: 0px 0px 16px 0px rgba(51, 55, 71, 0.08);
+}
+
+
+.pagination-mobile {
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .pagination-desktop {
+    display: none;
+  }
+
+  .pagination-mobile {
+    display: flex !important;
+  }
+}
+
+.bg-white-imp {
+  background-color: white !important;
+}

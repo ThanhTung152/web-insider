@@ -1,0 +1,39 @@
+.compare {
+  box-shadow: 0px 0px 16px 0px rgba(51, 55, 71, 0.08);
+}
+
+.slick-list {
+  padding-left: 0 !important;
+}
+
+.slick-slide {
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.slick-prev {
+  left: 23px;
+  z-index: 9;
+
+  svg {
+    transform: rotate(-180deg);
+  }
+}
+
+.slick-next {
+  right: 23px;
+}
+
+.slick-prev,
+.slick-next {
+  width: 32px;
+  height: 32px;
+
+  &::before {
+    display: none;
+  }
+  &.slick-disabled {
+    display: none;
+  }
+}

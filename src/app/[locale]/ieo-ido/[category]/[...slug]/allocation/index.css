@@ -1,0 +1,21 @@
+.allocations .echarts-for-react {
+  width: 260px !important;
+  height: 260px !important;
+}
+.allocations .index {
+  margin-bottom: 12px;
+  display: flex;
+}
+.allocations .index__name {
+  margin-left: 13px;
+}
+
+.allocation-tooltip {
+  --antd-arrow-background-color: #fcfcfd !important;
+}
+.allocation-tooltip .ant-tooltip-inner {
+  background-color: #fcfcfd !important;
+  color: #333747 !important;
+  font-size: 12px;
+}
+/*# sourceMappingURL=index.css.map */

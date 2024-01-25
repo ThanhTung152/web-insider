@@ -1,0 +1,39 @@
+.nav-bar {
+  .logo {
+    img {
+      min-width: 131px;
+      width: 131px;
+      height: 31px;
+    }
+  }
+
+  .menu {
+    &:hover {
+      .sub-menu {
+        display: block;
+      }
+    }
+
+    .sub-menu {
+      display: none;
+
+      &-wrapper {
+        box-shadow: 0px 0px 24px 0px rgba(51, 55, 71, 0.15);
+      }
+
+      &-item:hover {
+        background: #eef2f6;
+      }
+    }
+
+    .caret {
+      margin: 0 auto;
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent;
+      border-bottom: solid 10px #fcfcfd;
+      height: 0;
+      width: 0;
+      filter: drop-shadow(0 0 10px rgba(51, 55, 71, 0.15));
+    }
+  }
+}

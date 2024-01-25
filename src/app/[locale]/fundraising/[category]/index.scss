@@ -1,0 +1,25 @@
+.fundraising {
+  margin-top: 12px;
+  padding: 24px;
+  box-shadow: 0 0 16px 0 rgba(51, 55, 71, 0.08);
+  border-radius: 8px;
+
+  .table-pagination {
+    .table-total {
+      font-size: 14px;
+    }
+
+    .ant-pagination-item-active {
+      background: #5766ff;
+      border-color: #5766ff;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .pagination-mobile {
+    display: none;
+  }
+}

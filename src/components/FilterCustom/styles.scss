@@ -1,0 +1,14 @@
+.select-coin-custom {
+  &__item {
+  }
+
+  .ant-select-selection-item {
+    display: none !important;
+  }
+
+  .ant-select-selection-item-content {
+    .ant-checkbox {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.unlock-title {
+  font-weight: 600;
+  text-align: center;
+  color: #333747;
+  margin-bottom: 8px;
+}
+
+.chart {
+  position: relative;
+
+  .echarts-for-react {
+    height: 200px !important;
+  }
+
+  &__unlock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .percent {
+      font-size: 24px;
+      font-weight: 700;
+      color: #5766ff;
+      line-height: 32px;
+    }
+  }
+}

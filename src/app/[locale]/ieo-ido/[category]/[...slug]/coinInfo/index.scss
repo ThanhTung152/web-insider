@@ -1,0 +1,107 @@
+.coins {
+  &__header {
+    &-tag-mb {
+      display: none;
+    }
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    color: #333747;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  &__tag {
+    display: flex;
+    height: 20px;
+    // align-items: center;
+    font-size: 12px;
+    color: #9fa4b7;
+    font-weight: 500;
+    line-height: 20px;
+
+    &-text {
+      background-color: #eef2f6;
+      border-radius: 4px;
+    }
+  }
+
+  &__category {
+    .category {
+      width: calc(100% / 2);
+      height: fit-content;
+
+      &__number {
+        color: var(--grey-grey-day-700, #333747);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+      }
+
+      &__link {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  &__title {
+    color: var(--grey-grey-day-500, #9fa4b7);
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
+
+.price {
+  &--increase {
+    color: #1ab369;
+  }
+}
+
+.popup__contents {
+  &-index {
+    display: flex;
+    margin-top: 12px;
+
+    .index__detail {
+      color: var(--grey-grey-day-700, #333747);
+      font-family: Plus Jakarta Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      margin-left: 13px;
+    }
+  }
+}
+
+.launchpad-information {
+  .ant-avatar.ant-avatar-circle:has(span.ant-avatar-string) {
+    background-color: #eef2f6;
+    color: #333747;
+    border-color: #e5e6eb;
+  }
+
+  .avatar-wrapper {
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+}

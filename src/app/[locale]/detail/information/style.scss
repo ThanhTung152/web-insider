@@ -1,0 +1,45 @@
+.coin-detail {
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px 0px rgba(51, 55, 71, 0.08);
+  background-color: #fcfcfd;
+
+  &__range {
+    margin: 24px 0 12px;
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    .price__range {
+      position: relative;
+      width: 94px;
+      margin: 0 8px;
+      height: 6px;
+      border-radius: 20px;
+      background-color: #e5e6eb;
+    }
+
+    .price__range--active {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 75%;
+      height: 100%;
+      border-radius: 20px;
+      background: linear-gradient(#547aff, #4551de);
+    }
+  }
+}
+
+.select-time {
+  .ant-select-selector {
+    border: none !important;
+    background-color: #eef2f6 !important;
+
+    .ant-select-selection-item {
+      font-size: 12px;
+    }
+  }
+}

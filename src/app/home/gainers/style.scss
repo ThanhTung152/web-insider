@@ -1,0 +1,38 @@
+.gainer-tab {
+  .table-header {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Plus Jakarta Sans Medium';
+    color: black;
+  }
+
+  .ant-table-thead {
+    .ant-table-cell {
+      font-size: 14px;
+      font-weight: 700;
+      font-family: 'Plus Jakarta Sans Medium';
+      color: black;
+      background: none !important;
+      border-top: 1px solid #f0f0f0;
+      border-bottom: 1px solid #f0f0f0;
+
+      &::before {
+        width: 0px !important;
+      }
+    }
+  }
+
+  .ant-table-tbody {
+    font-family: 'Plus Jakarta Sans Medium';
+    color: black;
+    font-size: 14px;
+  }
+}
+
+.overlay-menu-center {
+  .ant-dropdown-menu-title-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}

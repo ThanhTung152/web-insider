@@ -1,0 +1,67 @@
+.home-tabs {
+  .home-tab {
+    &.active {
+      span {
+        line-height: 36px;
+        color: #5766ff;
+        font-weight: 700;
+        font-size: 22px;
+
+        @media screen and (min-width: 1024px) {
+          transition: all 0.15s ease-in-out;
+          font-size: 28px;
+        }
+      }
+
+      svg {
+        width: 32px !important;
+        height: 32px !important;
+
+        @media screen and (min-width: 1024px) {
+          width: 36px !important;
+          height: 36px !important;
+        }
+      }
+    }
+
+    span {
+      line-height: 28px;
+      color: #9fa4b7;
+      font-weight: 500;
+      font-size: 18px;
+
+      @media screen and (min-width: 1024px) {
+        font-size: 20px;
+      }
+    }
+
+    svg {
+      width: 24px !important;
+      height: 24px !important;
+    }
+  }
+}
+
+.home-tab-thumb {
+  height: 8px;
+  width: 8px;
+  background-color: #b9b9b9;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &.active {
+    width: 22px;
+    border-radius: 12px;
+    background-color: #5766ff;
+    animation: tab cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  }
+}
+
+@keyframes tab {
+  0% {
+    width: 8px;
+  }
+  100% {
+    width: 22px;
+  }
+}

@@ -1,0 +1,56 @@
+.coins {
+  font-family: 'Plus Jakarta Sans';
+  &__header {
+    border-bottom: 1px solid #e5e6eb;
+  }
+
+  &__name {
+    line-height: 32px;
+  }
+
+  .line__tag {
+    width: 1px;
+    height: 18px;
+  }
+
+  &__category {
+    .category {
+      width: calc(100% / 2);
+      height: fit-content;
+
+      &__number {
+        color: var(--grey-grey-day-700, #333747);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+      }
+    }
+  }
+
+  &__title {
+    color: var(--grey-grey-day-500, #9fa4b7);
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
+
+.popup__contents {
+  &-index {
+    display: flex;
+    margin-top: 12px;
+
+    .index__detail {
+      color: var(--grey-grey-day-700, #333747);
+      font-family: 'Plus Jakarta Sans';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      margin-left: 13px;
+    }
+  }
+}

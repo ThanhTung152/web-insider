@@ -1,0 +1,86 @@
+.btn-apply {
+  background: linear-gradient(180deg, #547aff 0%, #4551de 100%);
+  color: #fff;
+
+  &:hover {
+    background: linear-gradient(180deg, #547aff 0%, #4551de 100%);
+    opacity: 0.9;
+  }
+}
+
+.filter-wrapper {
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #e5e6eb;
+    border-radius: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pagination-desktop {
+    display: none;
+  }
+
+  .pagination-mobile {
+    display: flex !important;
+  }
+}
+
+.coin-tab {
+  .table-header {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Plus Jakarta Sans Medium';
+    color: black;
+  }
+
+  .ant-table-thead {
+    .ant-table-cell {
+      font-size: 14px;
+      font-weight: 700;
+      font-family: 'Plus Jakarta Sans Medium';
+      color: black;
+      background: none !important;
+      border-top: 1px solid #f0f0f0;
+      border-bottom: 1px solid #f0f0f0;
+
+      &::before {
+        width: 0px !important;
+      }
+    }
+  }
+
+  .ant-table-tbody {
+    font-family: 'Plus Jakarta Sans Medium';
+    color: black;
+    font-size: 14px;
+
+    .coin-code {
+      font-size: 12px;
+      font-family: 'Plus Jakarta Sans Light';
+    }
+  }
+
+  .table-pagination {
+    .table-total {
+      font-size: 14px;
+    }
+
+    .ant-pagination-item-active {
+      background: #5766ff;
+      border-color: #5766ff;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .pagination-mobile {
+    display: none;
+  }
+}

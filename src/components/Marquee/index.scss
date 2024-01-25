@@ -1,0 +1,98 @@
+.marquee {
+  position: relative;
+  overflow: hidden;
+  height: 20px;
+
+  &:hover {
+    .marquee__wrapper {
+      animation-play-state: paused;
+    }
+  }
+
+  &__wrapper {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    animation: scroll2 30s linear infinite;
+
+    > a {
+      position: relative;
+      display: inline-block;
+      margin: 0 1rem;
+      vertical-align: middle;
+
+      img {
+        max-width: 15rem;
+        max-height: 8.5rem;
+      }
+    }
+
+    > img {
+      position: relative;
+      display: inline-block;
+      margin: 0 1rem;
+      vertical-align: middle;
+    }
+
+    &.marquee-2 {
+      animation-delay: 6s;
+
+      > div {
+        &:first-child {
+          margin-left: 48px;
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            right: auto;
+            width: 1px;
+            height: 20px;
+            top: auto;
+            bottom: 50%;
+            transform: translate(0, 50%);
+            background: #d1d2dc;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .marquee-2 {
+    animation-delay: 6s !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .marquee-2 {
+    animation-delay: 10s !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .marquee-2 {
+    animation-delay: 14s !important;
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+.gas-tooltip {
+  .ant-tooltip-inner {
+    min-width: 350px;
+  }
+}

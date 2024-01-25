@@ -1,0 +1,79 @@
+.banner {
+  &__wrapper {
+    &__image {
+      animation: image-in 1s ease-out;
+      position: relative;
+      padding: 4px;
+      overflow: hidden;
+      border-radius: 20px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        inset: -0.2rem;
+        z-index: -1;
+        background: linear-gradient(0deg, #547aff, #c3f2ff, #4551de);
+        animation: rotate 10s linear infinite;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        inset: -0.2rem;
+        z-index: -1;
+        background: linear-gradient(0deg, #547aff, #c3f2ff, #4551de);
+        animation: rotate 10s linear infinite;
+        filter: blur(10px);
+      }
+
+      img {
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .highlight {
+    color: #5766ff;
+  }
+
+  .search-btn {
+    background: linear-gradient(180deg, #547aff 0%, #4551de 100%);
+    animation: button-in 0.35s ease-in-out;
+  }
+}
+
+@keyframes button-in {
+  0% {
+    right: 0;
+    opacity: 0;
+  }
+  100% {
+    right: 10px;
+    opacity: 1;
+  }
+}
+
+@keyframes image-in {
+  0% {
+    transform: translateY(120px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

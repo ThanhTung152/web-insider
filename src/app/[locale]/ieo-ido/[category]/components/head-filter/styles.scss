@@ -1,0 +1,46 @@
+.header-filter {
+  &__options {
+    .ant-btn {
+      border-radius: 8px;
+      height: 44px;
+      padding: 0 20px;
+
+      &.active {
+        background: linear-gradient(
+          180deg,
+          #547aff 0%,
+          #4551de 100%
+        ) !important;
+        color: white !important;
+      }
+
+      &:not(:disabled):hover {
+        background: linear-gradient(180deg, #547aff 0%, #4551de 100%);
+        color: white !important;
+      }
+    }
+  }
+
+  .ant-segmented {
+    height: 36px;
+    padding: 4px;
+    background-color: var(--gray-200-color);
+
+    .ant-segmented-group {
+      height: 28px;
+
+      .ant-segmented-item {
+        min-width: 70px;
+      }
+
+      .ant-segmented-item-label {
+        min-height: 28px;
+        line-height: 28px;
+      }
+
+      .ant-segmented-item-selected {
+        color: var(--blue-primary-color);
+      }
+    }
+  }
+}

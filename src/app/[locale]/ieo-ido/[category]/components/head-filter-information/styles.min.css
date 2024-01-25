@@ -1,0 +1,35 @@
+.header-filter__options .ant-btn {
+  border-radius: 8px;
+  height: 44px;
+  padding: 0 20px;
+}
+.header-filter__options .ant-btn.active {
+  background: linear-gradient(180deg, #547aff 0%, #4551de 100%) !important;
+  color: #fff !important;
+}
+.header-filter__options .ant-btn:not(:disabled):hover {
+  background: linear-gradient(180deg, #547aff 0%, #4551de 100%);
+  color: #fff !important;
+}
+.header-filter .ant-segmented {
+  height: 36px;
+  padding: 4px;
+  background-color: var(--gray-200-color);
+}
+.header-filter .ant-segmented .ant-segmented-group {
+  height: 28px;
+}
+.header-filter .ant-segmented .ant-segmented-group .ant-segmented-item {
+  min-width: 70px;
+}
+.header-filter .ant-segmented .ant-segmented-group .ant-segmented-item-label {
+  min-height: 28px;
+  line-height: 28px;
+}
+.header-filter
+  .ant-segmented
+  .ant-segmented-group
+  .ant-segmented-item-selected {
+  color: var(--blue-primary-color);
+}
+/*# sourceMappingURL=styles.min.css.map */

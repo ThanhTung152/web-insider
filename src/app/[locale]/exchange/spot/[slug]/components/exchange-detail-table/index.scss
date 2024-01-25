@@ -1,0 +1,34 @@
+.mobile-show {
+  display: none;
+}
+
+.coin-tab {
+  .table-pagination {
+    .ant-pagination-item-active {
+      background: #5766ff;
+      border-color: #5766ff;
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .coin-tab {
+    .filter {
+      width: 100%;
+    }
+
+    .table-pagination {
+      display: flex;
+    }
+  }
+  .desktop-show {
+    display: none;
+  }
+
+  .pagination-mobile {
+    display: flex !important;
+  }
+}
